@@ -1,0 +1,36 @@
+{
+  "name": "Струйные графические редакторы",
+  "short_name": "Редакторы",
+  "description": "Приложение про струйные графические редакторы",
+  "start_url": "/hj/",
+  "display": "standalone",
+  "background_color": "#FFDA63",
+  "theme_color": "#004080",
+  "icons": [
+  {
+    "src": "paint.jpg",
+    "sizes": "192x192",
+    "type": "image/jpeg",
+    "purpose": "any"
+  },
+  {
+    "src": "paint_images.jpg",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "any"
+  }
+],
+"screenshots": [
+  {
+    "src": "screen4.jpg",
+    "sizes": "1280x720",
+    "type": "image/jpeg",
+    "form_factor": "wide"
+  }
+],
+"id": "/index.html"
+
+
+
+  
+}

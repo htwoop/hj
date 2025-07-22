@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Струйные графические редакторы</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#004080">
+</head>
+<body>
+  <header>
+    <h1>Струйные графические редакторы</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="editor1.html">GIMP</a></li>
+        <li><a href="editor2.html">Paint</a></li>
+        <li><a href="contact.html">Обратная связь</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Что такое струйные графические редакторы?</h2>
+      <p>Струйные графические редакторы — это специализированные программы для создания и редактирования изображений, оптимизированные для качественной печати на струйных принтерах. Они позволяют управлять цветами, разрешением и другими параметрами для печатной продукции.</p>
+      <img src="paint_image3.jpg" alt="GIMP" style="display: block; margin: 20px auto; max-width: 50%; height: auto;">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Графика+ | Тел.: +7 900 000-00-01</p>
+  </footer>
+
+  <script>
+    // Регистрируем сервис-воркер
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .then(registration => console.log('Service Worker зарегистрирован!'))
+          .catch(err => console.log('Service Worker registration failed: ', err));
+      });
+    }
+  </script>
+</body>
+</html>

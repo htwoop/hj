@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Обратная связь — Струйные графические редакторы</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <header>
+    <h1>Струйные графические редакторы</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="editor1.html">GIMP</a></li>
+        <li><a href="editor2.html">Paint</a></li>
+        <li><a href="contact.html">Обратная связь</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Обратная связь</h2>
+
+    <div id="success-message" style="color:green; display:none;">
+      Спасибо за отзыв! 
+    </div>
+
+    <form id="feedback-form">
+      <label for="name">Ваше имя:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="message">Сообщение:</label><br />
+      <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+
+      <button type="submit">Отправить</button>
+    </form>
+
+    <script>
+      document.getElementById('feedback-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Отменяем реальную отправку
+        document.getElementById('success-message').style.display = 'block';
+        this.reset(); // Очищаем форму
+      });
+    </script>
+
+
+    <hr />
+  </main>
+  <footer>
+    <p>&copy; 2025 Графика+ | Тел.: +7 900 000-00-01</p>
+  </footer>
+</body>
+</html>
