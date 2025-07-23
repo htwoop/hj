@@ -1,13 +1,13 @@
 const CACHE_NAME = 'my-site-cache-v1';
-const urlsToCache = ['/',
-    '/index.html',
-    '/editor1.html',
-    '/editor2.html',
-    '/contact.html',
-    '/style.css',
-    '/paint_image.jpg',
-    '/paint_image2.jpg',
-    '/paint_image3.jpg'];
+const urlsToCache = ['./',
+    './index.html',
+    './editor1.html',
+    './editor2.html',
+    './contact.html',
+    './style.css',
+    './paint_image.jpg',
+    './paint_image2.jpg',
+    './paint_image3.jpg'];
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
